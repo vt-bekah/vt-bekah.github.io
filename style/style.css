@@ -1,0 +1,101 @@
+html,
+body,
+
+/* Add the following CSS for Masonry layout */
+.masonry-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* $w: Min(10em, 50%); */
+
+.masonry-item {
+    /* width: calc(33.33% - 20px);
+    margin: 10px;
+    box-sizing: border-box; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, Min(100em, 100%));
+    > * { width:  Min(20em, 100%); }
+    justify-content: center;
+    /* grid-gap: .5em; */
+    /* padding: .5em; */
+}
+
+/* Left side layout */
+.left-column {
+    width: 28%;
+}
+#headshot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+/* Right side layout */
+.right-column {
+    margin: auto;
+    width: 60%; 
+    padding: 10px
+}
+
+/* Resume section to span across the entire webpage */
+.resume {
+    width: 100%;
+}
+
+/* Set styles for core text */
+.header1{
+    font-size: 48px;
+    font-weight: bold;
+}
+.header2{
+    font-size: 32px;
+    font-weight: bold;
+}
+.header3{
+    font-size: 26px;
+    font-weight: bold;
+}
+.header4{
+    font-size: 20px;
+    font-weight: bold;
+}
+.header5{
+    font-size: 16px;
+    font-weight: bold;
+}
+.paragrph{
+    font-size: 16px;
+}
+.highlight-green{
+    background-color: #a1d99b;
+}
+.underline{
+    text-decoration: underline;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #c7e9c0;
+    color: black;
+    cursor: pointer;
+    /* padding: 5px; */
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #41ab5d;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .collapsible-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #edf8e9;
+  }

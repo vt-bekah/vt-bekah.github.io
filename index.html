@@ -5,58 +5,101 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bellybutton Biodiversity</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Rebekah Aldrich</title>
+  <!-- Masonry library source -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+  <!-- My style CSS -->
+  <link rel="stylesheet" type="text/css" href="./style/style.css">
 </head>
 
 <body>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+  <!-- Wrap the entire content in a masonry-container -->
+  <div class="masonry-container">
+    <!-- Left side layout -->
+    <div class="masonry-item left-column">
+      <div class="masonry-item" id="headshot">
+      <!-- <div id="headshot"> -->
+        <img src="./images/Aldrich_R.jpg" alt="Rebekah Aldrich">
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="well">
-          <h5>Test Subject ID No.:</h5>
-          <!-- This is the dropdown meny to select a test subject -->
-          <!-- <select id="selDataset" onchange="optionChanged(this.value)"></select> -->
-          <select id="selDataset"></select>
-        </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
-          </div>
-          <div id="sample-metadata" class="panel-body">
-            <!-- This is the Demographic Info -->
-          </div>          
-        </div>
-      </div>
-      <div class="col-md-5">
-        <div id="bar"></div>
-        <!-- This is the bar chart space -->
-      </div>
-      <div class="col-md-5">
-        <div id="gauge"></div>
-        <!-- This is the gauge space -->
-      </div>
+    <!-- Right side layout -->
+    <!-- <div class="masonry-item right-column"> -->
+    <div class="right-column">
+      <h1>Rebekah Aldrich</h1>
+      <h2>LinkedIn Profile: <a href="https://www.linkedin.com/in/rebekah-aldrich-13103219/">https://www.linkedin.com/in/rebekah-aldrich-13103219/</a></a></h2>
+      <h2>GitHub Overview: <a href="https://github.com/vt-bekah">https://github.com/vt-bekah</a></a></h2>
+      <h4 class="pitch">Awarded, high-impact servant leader with 15+ years of experience in managing product outcomes from concept to launch, driving organizational growth and championing employee development. Passion for people growth and decision making through data analysis with proven track record of administering quality management processes and fostering strong global relationships.</h4>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="bubble"></div>
-        <!-- This is the bubble chart space -->
+    <!-- <div class="masonry-item resume"> -->
+    <div class="resume">
+      <div class="skills">
+        <button type="button" class="collapsible"><h3>SKILLS</h3></button>
+        <div class="collapsible-content">
+          <h4 class="highlight-green">Software: </h4>
+          <p> Excel  VBA  Python  SQL  NOSQL  HTML/CSS  JavaScript  Tableau  Git  Perforce</p>
+          <h4 class="highlight-green">Frameworks & Methodologies: </h4>
+          <p> ETL  Risk Analysis & Avoidance  Budget Development  Advanced Problem Solving  Root Cause Identification  Test Strategy  Quality Management  Agile and Waterfall methodologies A zure DevOps for Project Management</p>
+          <h4 class="highlight-green">Mangement: </h4>
+          <p> Cross-functional Team Leadership  Diverse Employee Engagement  Employee Development  Performance Management</p>
+        </div>
+      </div>
+      <div class="experience">
+        <button type="button" class="collapsible"><h3>EXPERIENCE</h3></button>
+        <div class="collapsible-content">
+          <h4 class="highlight-green">Habitat for Humanity, Williams County | Georgetown, TX | 2023 </h4>
+          <h4 class="underline">Information Administrator Volunteer</h4>
+          <p>description</p>
+          <h4 class="highlight-green">National Instruments | Austin, TX | 2007-2023 </h4>
+          <h4 class=>Senior Group Manager – R & D Test Engineering (2019 – 2023)</h4>
+          <p>Led 9 test engineers through varying projects across Research & Development. Drove growth within discipline directing changes to policies/procedures i.e. adopting use of Azure DevOps. Leveraged stakeholder relationships globally (US, Hungary, Malaysia) to coordinate diverse staffing project requests from R&D and manufacturing while balancing discipline growth and process updates. 
+            <br>	Increased clarity in communication to senior leadership and global department and reduced time to determine staffing by creating spreadsheets, charts, and filtering mechanisms outlining details to ensure cross-functional alignment
+            <br>	Championed promotions within team via goal setting, constructive feedback, and delegating functional leader responsibilities
+            </p>
+          <h4 class="underline">Group Manager/Project Manager – R&D (Hardware, Software, Test Engineering) (2014 – 2019)</h4>
+          <p>Directed/Supported multiple key new product development projects through release and facilitated training while working across various groups, departments, and disciplines. Supervised up to 5 engineers and technicians in HW and SW disciplines supporting career growth based on individual goals. 
+            <br>	Oversaw multiple releases of General Purpose Interface Bus (GPIB) software driver versions, selecting features and ensuring proper validation for each release while aligning to key business and career growth needs
+            <br>	Spearheaded software and hardware releases and reference architecture documentation for 1st product launch of Switch Load Signal Conditioning product family aligning with business partners in U.S. and Europe and allowing duplication of design/build modules
+            </p>
+          <h4 class="underline">Quality Manger/Engineer (2010 – 2014)</h4>
+          <p>Promoted to steer quick closure to product issues while communicating cross-functionally throughout all organizational levels. Managed 3 engineers providing performance assessments and salary adjustments. Coached group managers and developers in root cause analysis and lean problem solving.
+            <br>	Provided oversight and administration of Quality Escalation Process globally (US, Hungary, and Malaysia)
+            <br>	Administered quality management processes across several product lines using existing/new metrics, leading to resolution of internal and external escalations
+            </p>
+          <h4 class="underline">Test Engineering Developer (2007 – 2010)</h4>
+          <p>Led multiple test solution designs for manufacturing new and existing hardware products. Partnered with local and international staff to execute complex projects. Evaluated product schematics to assess test coverage provided by test solution. Defined rack- based hardware systems implementing software solutions in LabView and TestStand.
+            <br>	Developed systems to test new hardware products within GPIB and Remote Controller families as part of production processes
+            <br>	Architected new production test systems to consolidate testing of 17 GPIB products to 1 station type for increased sustainability and reduced operating costs within manufacturing
+            </p>
+          <h4 class="highlight-green">Barrett's ATA | Cedar Park, TX | 2014-2019</h4>
+          <h4 class="underline">Volunteer Instructor</h4>
+          <p>description</p>
+          <h4 class="highlight-green">HEB | Greater Austin Area, TX | 2000-2007 </h4>
+          <h4 class="underline">Perpetual Inventory Controller / Cash Controller / Customer Service </h4>
+          <p>description</p>
+        </div>
+      </div>
+      <div class="education">
+        <button type="button" class="collapsible"><h3>EDUCATION</h3></button>
+        <div class="collapsible-content">
+          <h4 class="highlight-green">Certificate, Data Analytics and Visualization</h4>
+          <p>University of Texas at Austin & EdX – Austin, TX</p>
+          <h4 class="highlight-green">Master of Arts, Educational Psychology (37 hours completed)</h4>
+          <p>University of Texas at Austin</p>
+          <h4 class="highlight-green">Bachelor of Science, Math & Physics </h4>
+          <p>Virginia Polytechnic institute & State University (Virginia Tech) – Blacksburg, VA</p>
+        </div>
+      </div>
+      <div class="awards">
+        <button type="button" class="collapsible"><h3>AWARDS</h3></button>
+        <div class="collapsible-content">
+          <h4>Manager Excellence Award (2021)</h4>
+          <h4>3rd Degree Black Belt (2017)</h4>
+          <h4>Certified Instructor of Songahm TaeKwonDo (2015)</h4>
+        </div>
       </div>
     </div>
   </div>
-
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="./static/js/app.js"></script>
-  <!-- <script src="./static/js/bonus.js"></script> -->
-
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
