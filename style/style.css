@@ -1,5 +1,10 @@
 html,
-body,
+body ,
+
+html *
+{
+   font-family: Arial, Helvetica, sans-serif !important;
+}
 
 /* Add the following CSS for Masonry layout */
 .masonry-container {
@@ -15,12 +20,26 @@ body,
     margin: 10px;
     box-sizing: border-box; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, Min(100em, 100%));
-    > * { width:  Min(20em, 100%); }
+    grid-template-columns: repeat(auto-fit, Min(25em, 100%));
+    > * { width:  Min(25em, 100%); }
     justify-content: center;
     /* grid-gap: .5em; */
     /* padding: .5em; */
 }
+
+.masonry-item2 {
+    /* width: calc(33.33% - 20px);
+    margin: 10px;
+    box-sizing: border-box; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, Min(15em, 100%));
+    > * { width:  Min(10em, 100%); }
+    justify-content: center;
+    grid-gap: .5em;
+    padding: .5em;
+    grid-template-rows: masonry;
+}
+
 
 /* Left side layout */
 .left-column {
@@ -102,9 +121,9 @@ body,
 
   .collapsible:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
+    font-size: 12px;
     color: white;
-    float: right;
+    float: left;
     margin-left: 5px;
   }
   
