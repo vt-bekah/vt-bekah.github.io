@@ -1,3 +1,5 @@
+// Code for collapsing sections
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
