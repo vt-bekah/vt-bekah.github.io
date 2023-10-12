@@ -133,7 +133,7 @@ body {
     display: none;
     overflow: hidden;
     /* background-color: #edf8e9; */
-    background-color: rgb(255, 255, 205 , 0.5);
+    background-color: rgb(255, 255, 205 , 0.7);
 }
 
 /* Add plus/minus sign for collapsing */
